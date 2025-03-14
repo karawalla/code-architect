@@ -20,6 +20,21 @@ This repository serves as a reference for different architectural patterns and t
 - Implementation examples
 - Best practices
 
+## Docker Setup
+
+To run the examples using Docker:
+
+```bash
+# Build and start the container
+docker-compose up -d
+
+# Run a specific example
+docker-compose exec patterns python examples/factory_pattern/factory_example.py
+
+# Stop the container
+docker-compose down
+```
+
 ## Contributing
 
 Feel free to contribute by:
