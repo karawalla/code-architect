@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    volumes:
+      - ./src:/app
+      - ./repos:/app/repos
+    ports:
+      - "8000:8000"
+    environment:
+      - REPOS_PATH=/app/repos
